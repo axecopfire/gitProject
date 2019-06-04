@@ -23,8 +23,8 @@ Here is __two underscores__
 
 \* This is an actual asterisk
 
-[ ] This looks like a check box
-[x] This is a checked check box
+- [ ] This looks like a check box
+- [x] This is a checked check box
 - [ ] This is a bulleted check box
 
 
