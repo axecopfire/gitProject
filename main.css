@@ -1,0 +1,15 @@
+p {
+    color: tomato;
+    border: 2px solid black;
+}
+.btn {
+    font-size: 30px;
+}
+
+.btn-danger {
+    background-color: tomato;
+}
+
+.btn-success {
+    background-color: forestgreen;
+}
