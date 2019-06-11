@@ -4,6 +4,10 @@ p {
 }
 .btn {
     font-size: 30px;
+    margin: 10px;
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 .btn-danger {
@@ -12,4 +16,47 @@ p {
 
 .btn-success {
     background-color: forestgreen;
+}
+.block-stuff {
+    background-color: tomato; display: inline-block;
+    margin-top: 500px;
+}
+.border-stuff {
+    border-top: 100px solid rebeccapurple;
+    border-bottom: 100px solid rebeccapurple;
+    border-left: 50px solid forestgreen;
+    border-right: 50px solid orangered;
+    margin: 50px;
+    display: block;
+    border-radius: 50px;
+}
+
+/* We doin Responsive ness stuff */
+.html-5, .div-soup {
+    width: 50%;
+    float: right;
+    display: block;
+}
+.html-5 {
+    background: purple;
+}
+.div-soup {
+    background: teal;
+}
+
+@media (max-width: 500px) {
+    .html-5, .div-soup {
+        width: 100%;
+    }
+    .html-5 {
+        display: none;
+    }
+}
+
+@media(max-width: 500px) {
+    .hamburger {
+        background-color: chocolate;
+        width: 100px;
+        height: 100px;
+    }
 }
