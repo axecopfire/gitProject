@@ -40,17 +40,42 @@ console.log("Jams are at: ", invJams);
 console.log("Jellies are at: ", invJellies);
 console.log("Grapes are at: ", invGrapes);
 
-if (invJellies === 0 ) {
-    console.log("We are out of jellies");
-}
-else if (invJams === 0) {
-    console.log("we are out of jams");
-}
-else if (invGrapes === 0 ) {
-    console.log("We are out of grapes");
-} else {
-    console.log("Everything is in stock");
+console.log("---");
 
+// Show which items are out of stock
+if(invJellies === 0 || invJams === 0 || invGrapes === 0) {
+    if (invJellies === 0 ) {
+        console.log("We are out of jellies");
+    }
+    
+    if (invJams === 0) {
+        console.log("we are out of jams");
+    }
+    
+    if (invGrapes === 0 ) {
+        console.log("We are out of grapes");
+    } 
+
+}
+
+console.log("---");
+
+// Low Stock Warning
+if (
+    (invJellies < 5 && invJellies > 0) ||
+    (invJams < 5 && invJams > 0) || 
+    (invGrapes < 5 && invGrapes > 0)) {
+        var warning = "Warning item:";
+
+    if((invJellies < 5 && invJellies > 0)) {
+        console.log(warning, "Jellies",invJellies);
+    }
+    if ((invJams < 5 && invJams > 0)) {
+        console.log(warning, "Jams", invJams);
+    }
+    if((invGrapes < 5 && invGrapes > 0)) {
+        console.log(warning, "Grapes", invGrapes);
+    }
 }
 
 
