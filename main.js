@@ -7,16 +7,55 @@ var invJellies = 2;
 var invGrapes = 3;
 var guavas = false;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var groceryCart = "1 jellies, 1 jams, 1 grapes";
 
-invJams = 0;
-invJellies = 1;
-invGrapes = 2;
+invJams--;
+invJellies--;
+--invGrapes;
 
-console.log("This is guavas", guavas);
+if (invJams === 0 || invJellies === 0 || invGrapes === 0) {
+    console.log("we are out of something");
+}
 
-console.log("This is in our grocery cart", groceryCart);
-console.log("Our Inventory is now", invJams, invJellies, invGrapes);
+
+
+
+
+
+
+
+
+// invJams = 0;
+// invJellies = 1;
+// invGrapes = 2;
+
+// console.log("This is guavas", guavas);
+
+// console.log("This is in our grocery cart", groceryCart);
+// console.log("Our Inventory is now", invJams, invJellies, invGrapes);
 
 // // groceryCart = 'jams, grapes';
 // var groceryCartWithoutJellies = 'jams, grapes';
