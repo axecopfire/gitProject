@@ -36,8 +36,21 @@ invJams--;
 invJellies--;
 --invGrapes;
 
-if (invJams === 0 || invJellies === 0 || invGrapes === 0) {
-    console.log("we are out of something");
+console.log("Jams are at: ", invJams);
+console.log("Jellies are at: ", invJellies);
+console.log("Grapes are at: ", invGrapes);
+
+if (invJellies === 0 ) {
+    console.log("We are out of jellies");
+}
+else if (invJams === 0) {
+    console.log("we are out of jams");
+}
+else if (invGrapes === 0 ) {
+    console.log("We are out of grapes");
+} else {
+    console.log("Everything is in stock");
+
 }
 
 
